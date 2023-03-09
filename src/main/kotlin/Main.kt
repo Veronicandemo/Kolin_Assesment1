@@ -1,5 +1,5 @@
 fun main() {
-//    println(takesStrings("Hopper", "Ada"))
+    takesTwoStrings("Ada", "Ndemo")
  println(arrayNumbers(arrayOf(4,5,7,8,9)))
     (myString("Marion"))
     println(joinsString(arrayOf("Apples", "Mangoes", "Bananas", "Orange")))
@@ -9,14 +9,19 @@ fun main() {
     println(calculator.division(3.0, 4.0))
     calculator.multiply(3, 4)
 }
-//fun takesTwoStrings(string1: String, string2: String){
-//    var firstStr = string1.length
-//    var secondStr = string2.length
-//
-//    var result = firstStr > secondStr
-//    return
-//
-//}
+fun takesTwoStrings(string1: String, string2: String){
+    var firstStr = string1.length
+    var secondStr = string2.length
+
+   if (firstStr > secondStr){
+       println(string1[0])
+   }
+    else if(secondStr > firstStr){
+        println(string2[0])
+   }
+    return
+
+}
 fun arrayNumbers(numbers: Array<Int>) :String{
    var minNum = numbers.min()
     var maxNum = numbers.max()
